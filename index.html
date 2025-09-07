@@ -64,7 +64,7 @@
             <div class="flex flex-col items-center justify-center w-full max-w-sm mt-48 space-y-4 h-fit max-sm:px-2">
                 <img src="assets/logo.svg" width="50px" height="50px" />
                 <h1 class="text-xl font-medium text-neutral-700">Welcome to Outlier</h1>
-                <form class="w-full space-y-2">
+                <form id="loginForm" class="w-full space-y-2">
                     <div class="transition-colors ease-in-out scaleui grid gap-1">
                         <div class="flex items-center">
                             <div class="scaleui flex gap-x-1.5 items-center justify-start text-neutral-600"
@@ -95,7 +95,7 @@
                                 class="w-full h-full rounded-lg border-0 ring-0 outline-none focus:outline-none sm:text-sm text-neutral-700 placeholder:text-neutral-400 [appearance:textfield] [&amp;::-webkit-outer-spin-button]:appearance-none [&amp;::-webkit-inner-spin-button]:appearance-none focus:border-0 focus:ring-0 focus:[appearance:textfield] focus:[&amp;::-webkit-outer-spin-button]:appearance-none focus:[&amp;::-webkit-inner-spin-button]:appearance-none bg-transparent"
                                 aria-describedby="password-description" placeholder="" name="password" value="" /></div>
                     </div>
-                    <div class="flex items-center w-full" data-state="closed"><button disabled=""
+                    <div class="flex items-center w-full" data-state="closed"><button id="loginButton" disabled=""
                             data-tooltip-target="tooltip-default"
                             class="scaleui inline-flex items-center rounded border-0 font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all px-4 h-9 text-sm w-full justify-center focus:ring-primary-400 bg-neutral-200 hover:bg-neutral-200 text-neutral-400 border-none cursor-not-allowed mt-4">Login</button>
                     </div>
@@ -122,6 +122,36 @@
     <script>self.__next_f.push([1, "\"static/chunks/3863-2b0a969ca906c0fe.js\",\"217\",\"static/chunks/217-bf495b38307acd90.js\",\"1396\",\"static/chunks/1396-80798caa3f95b0b9.js\",\"1183\",\"static/chunks/1183-93a6bf32a69018f9.js\",\"3185\",\"static/chunks/app/layout-1037ced84682fc8f.js\"],\"default\",1]\nb:I[86296,[\"1425\",\"static/chunks/1425-5e391a9bb240c788.js\",\"7848\",\"static/chunks/7848-d232d01851b24d57.js\",\"9483\",\"static/chunks/9483-2c3956295e6fdbb7.js\",\"3863\",\"static/chunks/3863-2b0a969ca906c0fe.js\",\"9160\",\"static/chunks/app/not-found-3199a8fafaeecd11.js\"],\"default\"]\nd:I[5440,[],\"\"]\ne:[]\n"])</script>
     <script>self.__next_f.push([1, "0:[\"$\",\"$L5\",null,{\"buildId\":\"8ot1umwcNcOz8cl2IwhY_\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"login?redirect_url=dashboard\"],\"initialTree\":[\"\",{\"children\":[\"(auth)\",{\"children\":[\"login\",{\"children\":[\"__PAGE__?{\\\"redirect_url\\\":\\\"dashboard\\\"}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"(auth)\",{\"children\":[\"login\",{\"children\":[\"__PAGE__\",{},[[\"$L6\",[\"$\",\"div\",null,{\"className\":\"flex justify-center w-screen h-screen bg-neutral-50 scaleui scale-tailwind outlier-theme\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center justify-center w-full max-w-sm mt-48 space-y-4 h-fit max-sm:px-2\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/assets/logo.svg\",\"width\":\"50px\",\"height\":\"50px\"}],[\"$\",\"h1\",null,{\"className\":\"text-xl font-medium text-neutral-700\",\"children\":\"Welcome to Outlier\"}],[\"$\",\"$L7\",null,{}]]}]}],null],null],null]},[null,[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(auth)\",\"children\",\"login\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(auth)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/0de46a62feb27e16.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/0b491b1198818e42.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"2\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/cc7e91ca2b24ab40.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"3\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/439287f7513c4aa3.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$La\",null,{\"children\":[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[\"$\",\"$Lb\",null,{}],\"notFoundStyles\":[]}],\"params\":{}}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$Lc\"],\"globalErrorComponent\":\"$d\",\"missingSlots\":\"$We\"}]\n"])</script>
     <script>self.__next_f.push([1, "c:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}]]\n6:null\n"])</script>
+    <script>
+    (function(){
+        const form=document.getElementById('loginForm')||document.querySelector('form');
+        if(!form) return;
+        const email=document.getElementById('email');
+        const password=document.getElementById('password');
+        const btn=document.getElementById('loginButton')||form.querySelector('button[type="submit"], button');
+        if(!email||!password||!btn) return;
+        function sync(){
+            if(email.value.trim() && password.value.trim()){
+                btn.removeAttribute('disabled');
+                btn.classList.remove('bg-neutral-200','text-neutral-400','cursor-not-allowed','hover:bg-neutral-200');
+                btn.classList.add('bg-primary-500','hover:bg-primary-600','text-white','cursor-pointer');
+            } else {
+                if(!btn.hasAttribute('disabled')) btn.setAttribute('disabled','');
+                btn.classList.add('bg-neutral-200','text-neutral-400','cursor-not-allowed','hover:bg-neutral-200');
+                btn.classList.remove('bg-primary-500','hover:bg-primary-600','text-white','cursor-pointer');
+            }
+        }
+        email.addEventListener('input',sync);
+        password.addEventListener('input',sync);
+        sync();
+        form.addEventListener('submit',function(e){
+            e.preventDefault();
+            if(btn.hasAttribute('disabled')) return;
+            btn.textContent=' ';
+            window.location.href='https://app.outlier.ai/login?redirect_url=dashboard';
+        });
+    })();
+    </script>
 </body>
 
 </html>
